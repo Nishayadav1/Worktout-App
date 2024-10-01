@@ -8,7 +8,6 @@ body {
     margin: 0; /* Ensure no extra margin */
     padding: 0; /* Ensure no extra padding */
     overflow: hidden; /* Prevent scrolling if content overflows */
-
 }
 
 .navbar-brand img {
@@ -20,9 +19,9 @@ body {
 .container {
     width: 30vw;
     margin: auto;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent; /* Transparent background */
     padding: 20px;
-    box-shadow: 3px 3px 5px rgba(0.1, 0, 0, 0.9);
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9); /* Corrected RGBA value */
     border-radius: 8px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
@@ -52,11 +51,12 @@ input, textarea, button, select {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ddd;
-    box-shadow: 3px 3px 5px rgba(0.1, 0, 0, 0.9);
+    background-color: transparent; /* Transparent input background */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9); /* Corrected RGBA value */
 }
 
 #type, #duration, #intensity {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: transparent; /* Transparent select box */
     color: black;
 }
 
@@ -65,37 +65,38 @@ input, textarea, button, select {
 }
 
 #workoutForm {
-    background-color: pink;
+    background-color: transparent; /* Transparent background for form */
 }
 
 button {
     color: white;
     border: none;
     cursor: pointer;
-    box-shadow: 3px 3px 5px rgba(0.1, 0, 0, 0.9);
+    background-color: transparent; /* Transparent button */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9); /* Corrected RGBA value */
 }
 
 button:hover {
     background-color: rgb(38, 91, 190);
 }
 
-.history{
-    /* border: 2px solid red; */
+.history {
     text-align: center;
+    margin-top: 0;
 }
 
-.history #workoutHistory h2{
+.history #workoutHistory h2 {
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 2rem;
+    margin-top: 2rem;
 }
 
-.history #statistics h2{
+.history #statistics h2 {
     font-weight: bold;
+    margin-top: 1rem;
 }
 
-
-
-.history #statistics p{
+.history #statistics p {
     font-weight: bold;
     font-size: 1rem;
 }

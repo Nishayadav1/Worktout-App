@@ -71,6 +71,6 @@ document.getElementById('signin').addEventListener('submit', function (e) {
         alert('Sign In successful!');
         window.location.href = 'home.html'; // Redirect to home page
     } else {
-        alert('Invalid email or password!');
+        alert('Invalid email or password! Please sign up first.');
     }
 });
